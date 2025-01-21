@@ -11,7 +11,8 @@ const Button = ({
 }) => {
   const baseStyles = "";
   const variants = {
-    primary: "",
+    primary:
+      "font-normal text-base rounded-md text-text-white bg-text-orange py-[17px] px-10 sm:text-[21px] hover:bg-orange-600 transition",
     secondary: "",
     danger: "",
   };
