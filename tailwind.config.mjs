@@ -12,6 +12,9 @@ export default {
         background: {
           dark: "#1E1E1E",
           light: "#FFFFFF",
+          gray: "#545454",
+          darker: "#121212",
+          lighter: "#F8F8F8",
         },
         text: {
           black: "#000000",
