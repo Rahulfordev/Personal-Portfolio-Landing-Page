@@ -3,6 +3,9 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
+import { CiDark } from "react-icons/ci";
+import { CiLight } from "react-icons/ci";
+
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -16,9 +19,9 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 bg-gray-200 dark:bg-gray-800 rounded-md"
+      className="text-text-black dark:text-text-white text-[25px]"
     >
-      {theme === "dark" ? "🌞" : "🌙"}
+      {theme === "dark" ? <CiLight /> : <CiDark />}
     </button>
   );
 }

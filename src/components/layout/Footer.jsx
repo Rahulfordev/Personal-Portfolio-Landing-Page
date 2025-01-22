@@ -13,20 +13,19 @@ export default function Footer() {
     <footer className="bg-background-lighter dark:bg-background-dark text-center">
       <div className="container mx-auto">
         {/* Logo Section */}
-        <div className="py-10 sm:py-20">
-          <div className="flex justify-center items-center">
-            <Image
-              src={logo_light}
-              className="block dark:hidden"
-              alt="logo_light"
-            />
-            <Image
-              src={logo_dark}
-              className="hidden dark:block"
-              alt="logo_light"
-            />
-          </div>
+        <div className="flex justify-center items-center py-10 sm:py-20">
+          <Image
+            src={logo_light}
+            className="block dark:hidden"
+            alt="logo_light"
+          />
+          <Image
+            src={logo_dark}
+            className="hidden dark:block"
+            alt="logo_light"
+          />
         </div>
+
 
         {/* Navigation Links */}
         <div className="pb-10 sm:pb-[70px]">
@@ -43,7 +42,6 @@ export default function Footer() {
                 item === "Home"
                   ? "/"
                   : `/${item.toLowerCase().replace(/\s+/g, "-")}`;
-              const isActive = pathname === path;
 
               return (
                 <li key={index}>
