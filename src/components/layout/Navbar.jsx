@@ -2,14 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import logo_dark from "../../../public/images/logo_dark.png";
 import logo_light from "../../../public/images/logo_light.png";
 import Button from "../common/button/Button";
 import ThemeToggle from "../ThemeToggle";
 
 const Navbar = () => {
-  const pathname = usePathname();
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (

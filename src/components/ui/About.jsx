@@ -5,6 +5,7 @@ import about_image from "../../../public/images/about_image.png";
 import Image from "next/image";
 import Title from "../common/heading/Title";
 import Description from "../common/heading/Description";
+import ProgressBar from "../common/ProgressBar";
 const skills = [
   { name: "HTML", level: 80 },
   { name: "CSS", level: 70 },
@@ -41,22 +42,7 @@ export default function About() {
                     {skill.name}
                   </span>
                 </div>
-                <div
-                  className="relative bg-lightGray rounded-full h-4 overflow-hidden"
-                  onMouseEnter={() => setHoveredSkill(index)}
-                  onMouseLeave={() => setHoveredSkill(null)}
-                >
-                  <div
-                    className={`absolute inset-0 bg-primary transition-all duration-500`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                  <div
-                    className={`absolute inset-0 rounded-full bg-gray-200 transition-transform ${
-                      hoveredSkill === index ? "scale-105" : ""
-                    }`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
+                <ProgressBar value={skill.level} />
               </div>
             ))}
           </div>

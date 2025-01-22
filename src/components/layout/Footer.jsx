@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import logo_dark from "../../../public/images/logo_dark.png";
@@ -8,7 +7,6 @@ import logo_light from "../../../public/images/logo_light.png";
 import Image from "next/image";
 
 export default function Footer() {
-  const pathname = usePathname();
   return (
     <footer className="bg-background-lighter dark:bg-background-dark text-center">
       <div className="container mx-auto">
@@ -25,7 +23,6 @@ export default function Footer() {
             alt="logo_light"
           />
         </div>
-
 
         {/* Navigation Links */}
         <div className="pb-10 sm:pb-[70px]">

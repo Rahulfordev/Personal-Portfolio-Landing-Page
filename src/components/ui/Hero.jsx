@@ -18,7 +18,7 @@ export default function Hero() {
             </h4>
             <div className="text-text-black dark:text-text-white font-bold text-6xl lg:text-8xl mb-7">
               <h1>UI & UX</h1>
-              <h1 className="lg:text-right">Designer</h1>
+              <h1 className="lg:text-center">Designer</h1>
             </div>
 
             <Description className="pb-3 sm:pb-[22px] md:text-left max-w-[690px]">

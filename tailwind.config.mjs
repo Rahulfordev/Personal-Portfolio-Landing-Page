@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -8,6 +9,16 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        progress:
+          "progressAnimation 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards",
+      },
+      keyframes: {
+        progressAnimation: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+      },
       colors: {
         background: {
           dark: "#1E1E1E",
