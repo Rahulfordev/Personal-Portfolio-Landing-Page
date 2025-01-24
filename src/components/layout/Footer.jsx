@@ -58,18 +58,18 @@ export default function Footer() {
         <div className="pb-10 sm:pb-14">
           <div className="flex justify-center space-x-4 text-text-black text-2xl sm:text-3xl dark:text-text-white">
             <Link href="#">
-              <FaFacebook className="" />
+              <FaFacebook className="hover:text-text-orange transition" />
             </Link>
             <Link href="#">
-              <FaXTwitter />
-            </Link>
-
-            <Link href="#">
-              <FaInstagram />
+              <FaXTwitter className="hover:text-text-orange transition" />
             </Link>
 
             <Link href="#">
-              <FaLinkedin />
+              <FaInstagram className="hover:text-text-orange transition" />
+            </Link>
+
+            <Link href="#">
+              <FaLinkedin className="hover:text-text-orange transition" />
             </Link>
           </div>
         </div>

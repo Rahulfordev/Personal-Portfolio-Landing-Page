@@ -5,6 +5,7 @@ import About from "@/components/ui/About";
 import Services from "@/components/ui/Services";
 import Hero from "@/components/ui/Hero";
 import Navbar from "@/components/layout/Navbar";
+import Testimonials from "@/components/ui/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <Projects />
+      <Testimonials />
       <ContactForm />
       <Footer />
     </>

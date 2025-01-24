@@ -20,7 +20,7 @@ export default function ContactForm() {
           placeholder="Enter Your Email"
           className="w-full max-w-md py-3 sm:py-4 md:py-5 px-4 text-sm text-[#797979] border border-[#AFAFAF] bg-background-lighter dark:bg-text-white rounded-[14px] outline-none"
         />
-        <button className="bg-text-orange text-text-white px-6 py-3 md:py-4 sm:py-5 font-medium text-lg sm:text-2xl rounded-[14px]">
+        <button className="bg-text-orange text-text-white px-6 py-3 md:py-4 sm:py-5 font-medium text-lg sm:text-2xl rounded-[14px] hover:bg-orange-600 transition">
           Contact Me
         </button>
       </div>

@@ -47,7 +47,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   href={path}
-                  className={`text-xl font-normal text-text-black dark:text-text-white  hover:text-text-orange transition-all duration-300`}
+                  className={`text-xl font-normal text-text-black dark:text-text-white  hover:text-text-orange transition-all duration-300 dark:hover:text-text-orange`}
                 >
                   {item}
                 </Link>
